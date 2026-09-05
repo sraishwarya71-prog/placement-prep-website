@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Placement Prep{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🎯 PlacementPrep</div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/aptitude">Aptitude</a></li>
+            <li><a href="/coding">Coding</a></li>
+            <li><a href="/interview">Interview</a></li>
+            <li><a href="/resume">Resume Tips</a></li>
+            <li><a href="/companies">Companies</a></li>
+            <li><a href="/roadmap">Roadmap</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Made by Aishwarya | Placement Preparation Website</p>
+    </footer>
+</body>
+</html>
